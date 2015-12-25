@@ -1,7 +1,7 @@
 <h1>Todos los articulos</h1>
 
 <% @articles.each do |article| %>
-  <h1><%= article.title %></h1> - <%= link_to "Eliminar", article, method: :delete, style: "color: black" %>
+  <h1><%= link_to article.title, article, style: "color: black" %></h1> - <%= link_to "Eliminar", article, method: :delete, class: "red" %>
   <p><%= article.body %></p>
   <hr>
 <% end %>

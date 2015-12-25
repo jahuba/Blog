@@ -4,17 +4,21 @@ html, body{
 }
 a{
   text-decoration: none;
+  color: rgb(500,20,20)
 }
 .btn{
   background: inherit;
   border: none;
   outline: none;
-  text-transfomr: uppercase;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
 a:visited{
-  color: white;
+  color: rgb(500,150,150);
+}
+.red{
+  color: rgb(500,50,50)
 }
 .be-red{
   background-color: rgb(500,50,50);
