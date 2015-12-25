@@ -15,10 +15,19 @@
         <li class="col-md">Diseno</li>
         <li class="col-md">Programacion</li>
         <li class="col-md">Tecnologia</li>
+        <% if user_signed_in? %>
+          <li class="col-md">
+            <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete, style: "color:blue" %>
+          </li>
+        <% end %>
       </ul>
     </nav>
   </header>
-<%= yield %>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= yield %>
 
 </body>
 </html>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :articles
   #get 'welcome/index'
   get 'especial', to: 'welcome#index'
