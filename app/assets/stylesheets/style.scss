@@ -1,0 +1,46 @@
+html, body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.btn{
+  background: inherit;
+  border: none;
+  outline: none;
+  text-transfomr: uppercase;
+  cursor: pointer;
+}
+
+a:visited{
+  color: white;
+}
+.be-red{
+  background-color: rgb(500,50,50);
+}
+.white{
+  color: white;
+}
+.top-space{
+  margin-top: 1em;
+}
+.large-padding{
+  padding: 15px 7px;
+}
+.no-list{
+  list-style: none;
+}
+.field{
+  margin-top: 1em;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
+}
+
