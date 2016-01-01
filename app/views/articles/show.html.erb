@@ -11,3 +11,18 @@
 <p>Visitas <%= @article.visits_count %></p>
 
 <p><%= link_to "Editar", edit_article_path(@article) %></p>
+
+<div class="field">
+  <h3>Listado de comentarios</h3>
+
+  <ul>
+    <% @article.comments.each do |comment| %>
+      <li>
+        <%= comment.body %> - <%= comment.user.email %>
+      </li>
+    <% end %>
+  </ul>
+
+  <h3>Crear un nuevo comentario</h3>
+  <%= render "comments/form" %>
+</div>

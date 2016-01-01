@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :comments
   devise_for :views
   devise_for :users
-  resources :articles
+  resources :articles do
+    resources :comments, only: [:create, :destroy, :update]
+  end
   #get 'welcome/index'
   get 'especial', to: 'welcome#index'
 

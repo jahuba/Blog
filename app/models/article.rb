@@ -3,6 +3,7 @@ class Article < ActiveRecord::Base
   # los campos
   # metodos
   belongs_to :user
+  has_many :comments
   validates :title,  presence: true, uniqueness: true
   validates :body, presence: true, length: {minimum: 20}
 
