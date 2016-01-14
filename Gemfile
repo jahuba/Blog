@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem  'mysql2'
+gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #autenticacion de usuarios
 gem 'devise'
+
+#turbolinks para ajax
+gem 'jquery-turbolinks'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

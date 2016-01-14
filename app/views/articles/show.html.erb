@@ -15,7 +15,7 @@
 <div class="field">
   <h3>Listado de comentarios</h3>
 
-  <ul>
+  <ul id="comments-box">
     <% @article.comments.each do |comment| %>
       <li>
         <%= comment.body %> - <%= comment.user.email %>
