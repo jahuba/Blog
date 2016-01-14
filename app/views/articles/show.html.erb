@@ -8,6 +8,21 @@
 
 <p><%= @article.body %></p>
 
+<h3>Imagenes</h3>
+
+<div class="field">
+  <p>Imagen en tamano completo</p>
+  <%= image_tag @article.cover.url() %>
+</div>
+<div class="field">
+  <p>Imagen en tamano thumb</p>
+  <%= image_tag @article.cover.url(:thumb) %>
+</div>
+<div class="field">
+  <p>Imagen mini</p>
+  <%= image_tag @article.cover.url(:mini) %>
+</div>
+
 <p>Visitas <%= @article.visits_count %></p>
 
 <p><%= link_to "Editar", edit_article_path(@article) %></p>

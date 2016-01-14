@@ -30,6 +30,9 @@ gem 'devise'
 #turbolinks para ajax
 gem 'jquery-turbolinks'
 
+#para manejo de imagenes
+gem 'paperclip'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
