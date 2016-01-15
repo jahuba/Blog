@@ -33,6 +33,9 @@ gem 'jquery-turbolinks'
 #para manejo de imagenes
 gem 'paperclip'
 
+#para manejo de maquinas de estados
+gem 'aasm'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

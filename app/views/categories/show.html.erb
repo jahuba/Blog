@@ -6,7 +6,7 @@
 <div class="field">
 	<% @category.articles.each do |article| %>
 	  	<h3><%= link_to article.title, article, style: "color: black" %></h1>
-	  	<p><%= article.body %></p>	  	
+	  	<p><%= article.body %></p>
 	  	<%= link_to "Eliminar", article, method: :delete, class: "red" %></h3>
 	<% end %>
 </div>

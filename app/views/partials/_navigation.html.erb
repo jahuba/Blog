@@ -13,7 +13,7 @@
       <!-- Categorias -->
       <% @categories.each do |category| %>
         <li class="col-md">
-          <%= link_to category.name, category, style: "color:blue" %>
+          <%= link_to category.name, category, style: "color:#{category.color}" %>
         </li>
       <% end %>
 

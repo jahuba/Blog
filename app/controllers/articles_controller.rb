@@ -1,9 +1,9 @@
 class ArticlesController < ApplicationController
 
-  before_action :authenticate_user!, only: [:create, :new], except: [:show, :index]
   before_action :set_article, except: [:index, :new, :create]
-  before_action :authenticate_editor!, only: [:new, :create, :update]
-  before_action :authenticate_admin!, only: [:destroy]
+  before_action :authenticate_user!, only: [:create, :new], except: [:show, :index]
+  before_action :authenticate_editor!, only: [:new, :create, :edit, :update]
+  before_action :authenticate_admin!, only: [:new, :create, :edit, :update, :destroy]
 
   #get
   def index
@@ -43,6 +43,7 @@ class ArticlesController < ApplicationController
 
   def edit
   end
+
   #put /articles/:id
   def update
     if @article.update(article_params)
